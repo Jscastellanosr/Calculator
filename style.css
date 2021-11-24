@@ -1,0 +1,138 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    width: 500px;
+
+    background-color: aqua;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.title {
+    margin-top: 10px;
+    padding: 15px;
+    font-weight: 800;
+    background-color: hotpink;
+    border-radius: 15px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.display {
+    background-color: white;
+    margin-top: 10px;
+    width: 85%;
+    min-height: 40px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.screen {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.history {
+    height: 20px;
+    background-color: rgb(212, 207, 207);
+}
+
+.buttons {
+    display: flex;
+    gap: 30px;
+    padding: 5%;
+}
+
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+    justify-content: center;
+    width: 70%;
+}
+
+.operators {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 5px;
+}
+
+button {
+    font-weight: 800;
+    padding: 30px;
+    font-size: 20px;
+    transition: all 0.08s ease;
+}
+
+.numbers button {
+    background-color: gray;
+    color: aqua;
+    border-radius: 20px;
+}
+
+.operators button {
+    height: 90px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.key[key-id="109"],
+.key[key-id="107"],
+.key[key-id="111"],
+.key[key-id="106"],
+.key[key-id="13"] {
+    margin-bottom: 10px;
+}
+
+.key[key-id="13"] {
+    width: 80%;
+    padding: 0;
+    height: 20%;
+}
+
+.key[key-id="96"] {
+    width: 63%;
+}
+
+.key.pressed {
+    background-color: rgb(128, 0, 79);
+    color: white;
+    border-style:inset;
+    transform: scale(1.2);
+    font-size: 20px;
+}
+
+.del,
+.c {
+    font-size: 20px;
+    width: 20px;
+}
+
+.del{
+    background-color: firebrick;
+}
+
+.c {
+    background-color: chartreuse;
+}
+
+.equal {
+    font-size: 20px;
+}
